@@ -26,11 +26,11 @@
 
 ###
 
-<h3 align="left">👩‍💻  About Me</h3>
+<h3 align="left">About Me</h3>
 
 ###
 
-<p align="left">I'm Rajshree, a B.Tech Computer Science student at Birla Institute of Technology, Mesra.<br><br>- 🔭 I’m working as a Freelance Software Developer<br>- 📚 I'm currently learning advanced system design, machine learning, and cloud technologies<br>- ⚡ In my free time I do competitive programming and build side projects</p>
+<p align="left">I'm Rajshree, a B.Tech Computer Science student at Birla Institute of Technology, Mesra, specializing in full-stack development, machine learning, and scalable system design.<br><br>- 🔭 I’m working as a Freelance Software Developer, architecting and deploying high-performance web applications, automation systems, and microservices<br>- 📚 I'm currently learning advanced system design, machine learning optimization, and cloud-native technologies<br>- ⚡ In my free time I solve competitive programming problems, build production-grade projects, and optimize algorithms for performance and scalability</p>
 
 ###
 
