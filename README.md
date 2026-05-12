@@ -36,7 +36,7 @@
 <h2 align="center">Activity Graph</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DarkDemon1854/DarkDemon1854/refs/heads/main/profile-3d-contrib/profile-night-green.svg" />
+  <img src="profile-3d-contrib/profile-night-green.svg" />
 </p>
 
 <p align="center">
