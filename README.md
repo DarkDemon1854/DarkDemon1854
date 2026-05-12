@@ -33,7 +33,7 @@
   <img src="https://github-readme-stats2-olive.vercel.app/api?username=DarkDemon1854&show_icons=true&title_color=0079fa&text_color=0079fa&iconcolor=0079fa&hide_border=true&bg_color=000000&border_radius=0&count_private=true&include_all_commits=true" height="150" alt="stats graph"  />
 </div> <br>
 
-![DarkDemon1854's Github Activity Graph](https://github-readme-activity-graph-lemon-theta.vercel.app/graph?username=DarkDemon1854&custom_title=Raj%27s%20GitHub%20Activity%20Graph&bg_color=000000&color=0079fa&line=2100fa&point=0079fa&area=true&hide_border=true)
+![DarkDemon1854's Github Activity Graph](https://github-readme-activity-graph-lemon-theta.vercel.app/graph?username=DarkDemon1854&custom_title=DarkDemon1854%27s%20GitHub%20Activity%20Graph&bg_color=000000&color=0079fa&line=2100fa&point=0079fa&area=true&hide_border=true)
 
 <p align="center">
 <img src="assests/loficity.gif" alt="Lofi Nightlife city scene" />
