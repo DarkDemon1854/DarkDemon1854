@@ -1,0 +1,431 @@
+<svg viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+
+:root{
+--glass:rgba(255,255,255,.07);
+--border:rgba(255,255,255,.14);
+--text:#fff;
+--dim:#8B949E;
+--speed:36s;
+}
+
+.font-sans{
+font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.font-mono{
+font-family:'SF Mono','Fira Code','Cascadia Code',monospace;
+}
+
+/* MATRIX */
+
+.matrix-rain{
+fill:#00ff95;
+font-size:14px;
+font-family:monospace;
+letter-spacing:2px;
+writing-mode:vertical-rl;
+text-orientation:upright;
+animation:matrixFall linear infinite;
+filter:drop-shadow(0 0 6px #00ff95);
+}
+
+.r1{animation-duration:8s;}
+.r2{animation-duration:11s;}
+.r3{animation-duration:9s;}
+.r4{animation-duration:13s;}
+.r5{animation-duration:10s;}
+.r6{animation-duration:12s;}
+.r7{animation-duration:7s;}
+.r8{animation-duration:14s;}
+
+@keyframes matrixFall{
+0%{
+transform:translateY(-500px);
+opacity:0;
+}
+10%{
+opacity:.7;
+}
+100%{
+transform:translateY(1000px);
+opacity:0;
+}
+}
+
+/* 3D SLIDES */
+
+.slide{
+opacity:0;
+animation:slide3d var(--speed) infinite;
+transform-origin:center;
+will-change:transform,opacity,filter;
+}
+
+@keyframes slide3d{
+
+0%{
+opacity:0;
+transform:
+perspective(1400px)
+translateX(140px)
+translateZ(-300px)
+rotateY(-28deg)
+scale(.65);
+filter:blur(22px);
+}
+
+4%{
+opacity:1;
+transform:
+perspective(1400px)
+translateX(0)
+translateZ(0)
+rotateY(0deg)
+scale(1);
+filter:blur(0);
+}
+
+10%{
+opacity:1;
+transform:
+perspective(1400px)
+translateX(0)
+translateZ(0)
+rotateY(0deg)
+scale(1);
+filter:blur(0);
+}
+
+14%{
+opacity:0;
+transform:
+perspective(1400px)
+translateX(-120px)
+translateZ(-220px)
+rotateY(24deg)
+scale(.78);
+filter:blur(18px);
+}
+
+100%{
+opacity:0;
+}
+}
+
+/* PARALLAX BLOBS */
+
+.blob{
+filter:blur(60px);
+mix-blend-mode:screen;
+animation:blobMove 10s ease-in-out infinite;
+}
+
+.b2{animation-delay:4s;}
+.b3{animation-delay:7s;}
+
+@keyframes blobMove{
+0%,100%{
+transform:translate(0,0) scale(1);
+opacity:.18;
+}
+50%{
+transform:translate(30px,-20px) scale(1.25);
+opacity:.35;
+}
+}
+
+/* SCANLINE */
+
+.scan{
+animation:scanMove 5s linear infinite;
+}
+
+@keyframes scanMove{
+0%{
+transform:translateY(-320px);
+}
+100%{
+transform:translateY(320px);
+}
+}
+
+/* SHEEN */
+
+.sheen{
+animation:sheenMove 7s linear infinite;
+}
+
+@keyframes sheenMove{
+0%{
+transform:translateX(-500px) skewX(-24deg);
+}
+100%{
+transform:translateX(500px) skewX(-24deg);
+}
+}
+
+/* DOTS */
+
+.dot{
+opacity:.22;
+animation:dotPulse var(--speed) infinite;
+}
+
+@keyframes dotPulse{
+0%,100%{
+opacity:.22;
+transform:scale(1);
+}
+5%{
+opacity:1;
+transform:scale(1.8);
+}
+10%{
+opacity:.22;
+transform:scale(1);
+}
+}
+
+</style>
+
+<defs>
+
+<linearGradient id="glassFill" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="white" stop-opacity=".08"/>
+<stop offset="100%" stop-color="white" stop-opacity=".02"/>
+</linearGradient>
+
+<linearGradient id="sheenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="white" stop-opacity="0"/>
+<stop offset=".5" stop-color="white" stop-opacity=".14"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+
+<linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="white" stop-opacity="0"/>
+<stop offset=".5" stop-color="white" stop-opacity=".05"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+
+<clipPath id="clipCard">
+<rect width="400" height="220" rx="22"/>
+</clipPath>
+
+<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+<circle cx="1" cy="1" r=".7" fill="#151515"/>
+</pattern>
+
+</defs>
+
+<!-- BG -->
+
+<rect width="600" height="300" rx="18" fill="#000"/>
+<rect width="600" height="300" fill="url(#grid)"/>
+
+<!-- MATRIX -->
+
+<g opacity=".22">
+
+<text class="matrix-rain r1" x="40" y="-300">1011010010110100101101001011010010</text>
+<text class="matrix-rain r2" x="90" y="-500">0101011010010101101001010110100101</text>
+<text class="matrix-rain r3" x="150" y="-700">1101010011010100110101001101010011</text>
+<text class="matrix-rain r4" x="220" y="-400">0010110100101101001011010010110100</text>
+<text class="matrix-rain r5" x="290" y="-650">1010101101010110101011010101101010</text>
+<text class="matrix-rain r6" x="360" y="-550">0101101001011010010110100101101001</text>
+<text class="matrix-rain r7" x="430" y="-720">1100101011001010110010101100101011</text>
+<text class="matrix-rain r8" x="500" y="-620">1011010110110101101101011011010110</text>
+
+</g>
+
+<!-- BLOBS -->
+
+<g class="blob">
+<circle cx="520" cy="40" r="120" fill="#00e5ff"/>
+</g>
+
+<g class="blob b2">
+<circle cx="80" cy="250" r="100" fill="#7a5cff"/>
+</g>
+
+<g class="blob b3">
+<circle cx="320" cy="120" r="80" fill="#00ffae"/>
+</g>
+
+<!-- SCAN -->
+
+<g class="scan">
+<rect width="600" height="80" fill="url(#scanGrad)"/>
+</g>
+
+<!-- SLIDES -->
+
+<g transform="translate(100 35)">
+
+<!-- 1 -->
+<g class="slide" style="animation-delay:0s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">ImgNest</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Secure CDN-backed image hosting platform</tspan>
+<tspan x="0" dy="1.4em">with rate limiting and admin controls</tspan>
+</text>
+</g>
+</g>
+
+<!-- 2 -->
+<g class="slide" style="animation-delay:3.6s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Shortener API</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">AES encrypted URL shortening platform</tspan>
+<tspan x="0" dy="1.4em">with reCAPTCHA protection</tspan>
+</text>
+</g>
+</g>
+
+<!-- 3 -->
+<g class="slide" style="animation-delay:7.2s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">CF Clearance</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Automated browser microservice</tspan>
+<tspan x="0" dy="1.4em">for Turnstile challenge solving</tspan>
+</text>
+</g>
+</g>
+
+<!-- 4 -->
+<g class="slide" style="animation-delay:10.8s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Music Bot</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Telegram automation for FLAC music</tspan>
+<tspan x="0" dy="1.4em">retrieval across streaming services</tspan>
+</text>
+</g>
+</g>
+
+<!-- 5 -->
+<g class="slide" style="animation-delay:14.4s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Stream</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Media discovery and streaming platform</tspan>
+<tspan x="0" dy="1.4em">with automated indexing engine</tspan>
+</text>
+</g>
+</g>
+
+<!-- 6 -->
+<g class="slide" style="animation-delay:18s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Portfolio AI</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">AI-powered investment optimization</tspan>
+<tspan x="0" dy="1.4em">dashboard with predictive analytics</tspan>
+</text>
+</g>
+</g>
+
+<!-- 7 -->
+<g class="slide" style="animation-delay:21.6s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Mirror Bot</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Cloud mirroring automation framework</tspan>
+<tspan x="0" dy="1.4em">for Telegram-based workflows</tspan>
+</text>
+</g>
+</g>
+
+<!-- 8 -->
+<g class="slide" style="animation-delay:25.2s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Bypass API</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Direct extraction API for protected</tspan>
+<tspan x="0" dy="1.4em">download and streaming services</tspan>
+</text>
+</g>
+</g>
+
+<!-- 9 -->
+<g class="slide" style="animation-delay:28.8s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">2FA Vault</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Encrypted storage platform</tspan>
+<tspan x="0" dy="1.4em">for centralized 2FA management</tspan>
+</text>
+</g>
+</g>
+
+<!-- 10 -->
+<g class="slide" style="animation-delay:32.4s">
+<rect width="400" height="220" rx="22" fill="url(#glassFill)" stroke="rgba(255,255,255,.14)"/>
+<g clip-path="url(#clipCard)">
+<rect width="180" height="320" y="-50" fill="url(#sheenGrad)" class="sheen"/>
+</g>
+<g transform="translate(34 54)">
+<text fill="white" class="font-sans" font-size="25" font-weight="700">Payment Gateway</text>
+<text y="38" fill="#8B949E" class="font-sans" font-size="13">
+<tspan x="0" dy="1.4em">Automated transaction processing</tspan>
+<tspan x="0" dy="1.4em">with secure workflow orchestration</tspan>
+</text>
+</g>
+</g>
+
+</g>
+
+<!-- DOTS -->
+
+<circle class="dot" style="animation-delay:0s" cx="245" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:3.6s" cx="257" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:7.2s" cx="269" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:10.8s" cx="281" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:14.4s" cx="293" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:18s" cx="305" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:21.6s" cx="317" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:25.2s" cx="329" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:28.8s" cx="341" cy="278" r="3" fill="white"/>
+<circle class="dot" style="animation-delay:32.4s" cx="353" cy="278" r="3" fill="white"/>
+
+</svg>
