@@ -3,7 +3,7 @@
 
 <h2 align="center"> Self-taught, curious, and <img src="assests/flamey.gif" width="30"/>passionate<img src="assests/flamey.gif" width="30"/> about coding!</h2>
 
-<p align="left">I'm Raj, a B.Tech Computer Science student specializing in full-stack development, machine learning, and scalable system design.<br><br>- 🔭 I’m working as a Freelance Software Developer, architecting and deploying high-performance web applications, automation systems, and microservices<br>- 📚 I'm currently learning advanced system design, machine learning optimization, and cloud-native technologies<br>- ⚡ In my free time I solve competitive programming problems, build production-grade projects, and optimize algorithms for performance and scalability</p>
+<p align="left">I'm Raj, a final-year Computer Science student at BIT Mesra focused on full-stack development, scalable backend systems, automation, and machine learning.<br><br>- 🔭 I’m working as a Freelance Software Developer, architecting and deploying high-performance web applications, automation systems, and microservices<br>- 📚 I'm currently learning advanced system design, machine learning optimization, and cloud-native technologies<br>- ⚡ In my free time I solve competitive programming problems, build production-grade projects, and optimize algorithms for performance and scalability</p>
 
 <h2></h2><br>
 
