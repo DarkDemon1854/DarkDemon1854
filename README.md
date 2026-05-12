@@ -15,7 +15,7 @@
   <h2> <strong> Actively Learning </strong></h2>
   <img src="https://skillicons.dev/icons?i=dotnet,github,aws,cloudflare,npm,nextjs,react,typescript,gcp,heroku,mongodb,py,vercel,fastapi" alt="skills actively learning logos"> <br> 
   <h2> <strong> Plan to Learn </strong></h2>
-  <img src="https://skillicons.dev/icons?i=npm,postgres,selenium,bootstrap,sass,ts,netlify" alt="skills planning to learn logos">
+  <img src="https://skillicons.dev/icons?i=postgres,selenium,bootstrap,sass,ts,netlify" alt="skills planning to learn logos">
 </div>
 
 <p align="center"><br>
