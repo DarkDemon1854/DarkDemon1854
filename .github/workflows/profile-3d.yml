@@ -16,8 +16,8 @@ jobs:
       - uses: actions/checkout@v5
       - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ secrets.GITHUB_USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.SYNC_GITHUB_TOKEN }}
+          USERNAME: ${{ secrets.SYNC_GITHUB_USERNAME }}
       - name: Commit & Push
         run: |
           git config user.name github-actions
